@@ -5,3 +5,7 @@ Soy software developer, llevo en este mundo 0 años
 Me gusta jugar Clash Royale, soy fan de ella
 
 Mi hermana tiene covid.
+
+Estoy en mi rama de linder_dev
+y quiero que los cambios se junten
+con main
