@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario_Tarea</title>
+</head>
+<body>
+    <h1>------------------------------------------ Ejemplo1 ------------------------------------------</h1>
+    <h3>Los campo marcados con * son de insercion obligatoria</h3>
+    <form action="" method>
+        <label for="asunto">Asunto: </label>
+        <input
+            id="asunto"
+            type="text"
+            name="asunto"
+            placeholder="Ingrese un asunto"
+        />
+        <br/>
+
+        <label for="ApPaterno">Primer Apellido: </label>
+        <input
+            id="ApPaterno"
+            type="text"
+            name="ApPaterno"
+            placeholder="Ingrese su primer Apellido"
+            required
+        />
+        <br/>
+
+        <label for="ApMaterno">Segundo Apellido: </label>
+        <input
+            id="ApMaterno"
+            type="text"
+            name="ApMaterno"
+            placeholder="Ingrese su segundo Apellido"
+        />
+        <br/>
+
+        <label for="Nombre">Nombre: </label>
+        <input
+            id="Nombre"
+            type="text"
+            name="Nombre"
+            placeholder="Ingrese su Nombre"
+            required
+        />
+        <br/>
+
+        <label for="Identificacion">DNI/Pasaporte/NIE: </label>
+        <input
+            id="Identificacion"
+            type="number"
+            name="Identificacion"
+            placeholder="Ingrese su DNI o su Pasaporte"
+        />
+        <br/>
+
+        <label for="email">Correo electronico: </label>
+        <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Ingrese su email"
+            required
+        />
+        <br/>
+
+        <label for="telefono">Telefono: </label>
+        <input
+            id="telefono"
+            type="number"
+            name="telefono"
+            placeholder="Ingrese su telefono"
+        />
+        <br/>
+
+        <label for="sobreQue">Telefono</label>
+        <select id="sobreQue" name="sobreQue">
+            <option value="arte">Arte</option>
+            <option value="musica">Musica</option>
+            <option value="danza">Danza</option>
+        </select>
+        <br/>
+
+        <label for="queEscribir">Telefono</label>
+        <select id="queEscribir" name="queEscribir">
+            <option value="nada">Nada</option>
+            <option value="poco">Poco</option>
+            <option value="mucho">Mucho</option>
+        </select>
+        <br/>
+
+        <h3>Los datos personales facilitados son suceptibles de cesión cuandp esta sea precesida de tramitar su contestación</h3>
+        <button
+            type="submit">
+            Enviar
+        </button>
+    </form>
+</body>
+</html>

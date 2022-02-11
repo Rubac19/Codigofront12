@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <!-- Un formulario esta envuelto por una form -->
+    <!-- Atributo action: adonde se va a enviar la info(backend) -->
+    <!-- Atributo method: es la forma en la que la información será enviada(java script) -->
+    <form action="" method>
+        <!-- El input es una etiqueta que se cierra a si mismo, este tiene como atributo el type, el cual define que entrada será -->
+        <!-- placeholder es un texto de ayuda -->
+        <!-- value: Valor qye se le puede dar a un input -->
+        <!-- name: nombre que se le puede asignar al input -->
+        <!-- Todas las etiquetas de HTML pueden tener un Id para poder identificarlas para CSS o JS -->
+        <!-- required impide que se mande información, obligatorio llenar -->
+        <!-- maxlenght es lo maximo que se puede escribir y minlenght es lo minimo que se debe de requerir -->
+        <!-- fieldset sirve como contenedor tiene la propiedad de un leyend -->
+        <fieldset>
+            <legend>Informacion de las personas</legend>
+            <h4>Input de tipo texto</h4>
+            <input 
+                type="text" 
+                placeholder="Ingrese su nombre" 
+                value="ga" 
+                maxlenght="10"
+                minlenght="5"
+                name="nombre"
+            />
+
+            <h4>Input de tipo Number</h4>
+            <input 
+                type="number" 
+                placeholder="Ingrese un numero" 
+                value="1" 
+                name="number"
+            />
+
+            <h4>Input de tipo fecha</h4>
+            <input 
+                type="date" 
+                placeholder="Ingrese una fecha" 
+                value="10/02/2022" 
+                name="fecha"
+            />
+
+            <h4>Input de tipo hora</h4>
+            <input 
+                type="time" 
+                placeholder="Ingrese una hora"  
+                name="tiempo"
+            />
+        </fieldset>
+        
+
+        <h4>Input de tipo archivo</h4>
+        <input 
+            type="file" 
+            placeholder="Ingrese un archivo" 
+            name="archivo"
+        />
+
+        <h4>Input de tipo color</h4>
+        <input 
+            type="color" 
+            placeholder="Ingrese un color" 
+            name="color"
+        />
+
+        <h4>Input de tipo password</h4>
+        <input 
+            type="password" 
+            placeholder="Ingrese su password" 
+            name="password"
+            required
+        />
+
+        <h4>Input email</h4>
+        <label for="email">Ingrese un correo: </label>
+        <input 
+            id="email"
+            type="email" 
+            placeholder="Ingrese su email" 
+            name="email"
+        />
+
+        <!-- Hay un input llamado submit, este es el boton que envía la información -->
+        <!-- este submit puede ser un boton o input -->
+        <input
+            type="submit"
+            value="Enviar Datos"
+        />
+
+        <!-- Boton -->
+        <button
+            type="submit">
+            Registrar
+        </button>
+
+        <!-- Input de radiobutton -->
+        <!-- Para que solo se elija una opción se pone el mismo name -->
+        <!-- Para poder asignar un texto debo usar la etiqueta label -->
+        <!-- En el for del label hace referencia al id del inout -->
+        <h4>Radio button</h4>
+        <label for ="radio_1">
+            <input
+            id="radio_1"
+            type="radio" 
+            name="opcionColor"
+            />Rojo
+        </label>
+         
+        <input 
+            type="radio" 
+            name="opcionColor"
+        />Azul
+        <input 
+            type="radio" 
+            name="opcionColor"
+        />Verde
+
+        <!-- Input de marcado checkbox -->
+        <!-- Marcar más de una opción -->
+        <h4>Checkbox</h4>
+        <input
+            type="checkbox"
+            value="Curso"
+        />Algortimica
+        <input
+            type="checkbox"
+            value="Curso"
+        />Big Data
+        <input
+            type="checkbox"
+            value="Curso"
+        />Investigación Operativa
+        
+        <!-- Los select (como menu desplegables) -->
+        <h4>Select</h4>
+        <!-- Los select(jcombobox) se componen de 2 elementos, el padre select y el hijo option -->
+        <!-- Los option son cada opción del select -->
+        <!-- Atributo selected, que permite marcar una opcion y mostrarla -->
+        <!-- Cuando se mande la data el select envia al que este seleccionadp, por ende cada option debe tener un value, porque ese valor es el que se envía -->
+        <select name="Cursos_codigo">
+            <option value="html">HTML</option>
+            <option value="css" selected>CSS</option>
+            <option value="js">JavaScrip</option>
+            <option value="rjs">React JS</option>
+        </select>
+        
+    </form>
+
+</body>
+</html>
