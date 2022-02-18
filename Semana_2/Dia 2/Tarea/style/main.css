@@ -1,0 +1,210 @@
+/* Global
+estilos globales, aca ira los estilos de selectores 
+de etiquetas globales */
+body{
+    font-size: 16px;
+    font-family: arial;
+}
+
+h2{
+    font-size: 24px;
+}
+/* Header, estilos de header */
+.header{
+    background-color: #00af1c;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items:center;
+}
+
+.header a{
+    color:white;
+    text-decoration:none;
+}
+
+.header ul{
+    display: flex; 
+}
+
+.header li{
+    margin-left:10px;
+}
+
+.header .logo{
+    font-size:30px;
+}
+
+/* Home, estilos de la seccion home */
+.home{
+    padding: 20px;
+}
+
+.home h2{
+    color: blue;
+    margin-bottom: 20px;
+}
+
+.home p{
+    margin-bottom: 20px;
+}
+
+.imagen_home{
+    display:flex;
+    justify-content: space-between;
+}
+
+.imagen_home img{
+    width: 100%;
+}
+
+/* Servicios, estilos de la seccion servicio */
+.servicios{
+    padding: 20px;
+}
+
+.servicios h2{
+    color:blueviolet;
+    margin-bottom: 20px;
+}
+
+.servicios p{
+    margin-bottom: 20px;
+}
+
+.imagen_servicio{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.imagen_servicio figure{
+    margin-right: 30px;
+}
+
+.imagen_servicio img{
+    width: 100%;
+}
+
+.servicios a{
+    text-decoration:none;   
+    color:inherit; 
+}
+
+.servicios li{
+    margin-bottom: 10px;
+    margin-left: 40 px;
+}
+
+.servicios li:nth-child(1){
+    color: #ff0000;
+}
+
+.servicios li:nth-child(2){
+    color: #1400ff;
+}
+
+.servicios li:nth-child(3){
+    color: #d79b00;
+}
+
+.servicios li:nth-child(4){
+    color: #03b2b2;
+}
+
+/* Portafolios, estilos de la seccion portafolio */
+.portafolio{
+    padding: 20px;
+}
+
+.portafolio h2{
+    color:#aad206;
+    margin-bottom: 20px;
+}
+
+.portafolio p{
+    margin-bottom: 20px;
+}
+
+.imagen_portafolio{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.imagen_portafolio figure{
+    margin-right: 30px;
+}
+
+.imagen_portafolio img{
+    width: 100%;
+}
+
+.portafolio a{
+    text-decoration:none;   
+    color:inherit; 
+}
+
+.portafolio li{
+    margin-bottom: 10px;
+    margin-left: 40 px;
+}
+
+.portafolio li:nth-child(1){
+    color: #ae8800;
+}
+
+.portafolio li:nth-child(2){
+    color: #ae280b;
+}
+
+.portafolio li:nth-child(3){
+    color: #060564;
+}
+
+.portafolio li:nth-child(4){
+    color: #637300;
+}
+
+/* Contacto, estilos de la seccion contacto */
+.contacto{
+    padding: 20px;
+}
+
+.contacto h2{
+    color: red;
+    margin-bottom: 15px;
+}
+
+.contacto p{
+    margin-bottom: 15px;
+}
+
+.contacto input,
+.contacto textarea{
+    width:70%;
+    border: 1px solid #000;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.contacto button{
+    padding: 10px 20px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #22a900;
+    color: #22a900;
+    
+}
+/* Footer, estilos de Footer */
+
+.footer{
+    display: flex;
+    /* padding: 20px; */
+    justify-content: space-between;
+    background-color:#00af1c;
+    color: #fff;
+    align-items: center;
+    padding: 20px;
+}
+

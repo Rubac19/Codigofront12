@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores por atributo</title>
+    <style>
+        body{
+            background:red;
+        }
+
+        .box{
+            background:orange;
+            width: 100px; 
+            height: 100px;
+        }
+        /* Selectores por atributo */
+        input[type="text"]{
+            padding: 20px;
+        }
+
+        input[disabled]{
+            background: grey;
+        }
+
+        a[href="https://www.linkendin.com"]{
+            background: blueviolet;
+            color: orange;
+        }
+
+        a[href="https://www.google.com"]{
+            background: white;
+            color: yellow; 
+        }
+
+        /* PSEUDO-CLASES */
+        .box:hover{
+            background:black;
+        }
+
+        .box:hover h2{
+            color:white;
+        }
+
+        input:focus{
+            outline: none;
+            box-shadow: 0 0 10px blue;
+        }
+
+        ul li:first-child{
+            color:brown;
+        }
+
+        ul li:last-child{
+            color:brown;
+        }
+
+        /* Para seleccionar el especifico */
+        ul li:nth-child(2){
+            color:brown;
+        }
+
+        /* Para seleccionar impares */
+        ul li:nth-child(odd){
+            background: white;
+        }
+
+        /* Para seleccionar pares */
+        ul li:nth-child(even){
+            background: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>Texto</h2>
+    </div>
+
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+    <input type="text"/>
+    <input type="checkbox"/>
+    <input type="password"/>
+    <input type="text" disabled/>
+
+    <a href="https://www.linkendin.com">LINKENDIN</a>
+    <a href="https://www.google.com">GOOGLE</a>
+
+    <!-- Pseudo Elementos -->
+    <h2>Hola mundo</h2>
+    <style>
+       h2::after{
+            content:"''"
+        }
+
+        h2::first-letter{
+            font-size: 40px;
+        }
+    </style>
+</body>
+</html>

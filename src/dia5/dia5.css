@@ -1,0 +1,124 @@
+/* CSS es una hoja de estilo en cascada */
+/* Para poder ver reflejado mis estilos en mi pagina web, se debe de  vincular el archivo css en mi html */
+/* Se acostumbra a tener un estilo global para quitatle el pading y el margin a una pagina web*/
+/* padding: Espacio interno de un elemento */
+/* margin: Espacio externo de un elemento */
+
+
+/* Estilos globales para poder tener un estilo global para mi web yo puedo usar el * */
+/* Se recomienda solo manejar el margin, paaddinf y bordr-box */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Aplicar a todo el body */
+body{
+    /* font-family: atributo para cambiar el tipo de letra */
+    /* Para poder usar un tipo de letra que no esta instalado tenemos
+    que descargarlo y agregarlo al proyecto como un archivo 
+    o usar un link de referencia */
+    /* Tambien se puede anidar los tipos de letra */
+    font-family:'Times New Roman', Times, serif;
+    background-color: aqua;
+}
+
+
+/* Ahora vamos a ver como aplicar a una etiqueta especial */
+/* h1 de color naranja */
+
+h1{
+    /* color: es el color de los textos */
+    color:rgb(255, 150, 0);
+    /* Color de fondo de un elemento */
+    background-color:blueviolet;
+    /* font-weight: Para asignarle un peso a las letras */
+    /* Rango de 100-900, con propiedad bold(negrita) */
+    font-weight: 800 bold; 
+    text-align:center;
+}
+
+section{
+    background-color:chartreuse;
+    /* border: poner borde a un elemento, recibe 3 parametros(tamaño de pixel, color, solid) */
+    border: solid red 2px;
+}
+
+/* Como acceder a un elemento hijo */
+
+section article p{
+    color:rgb(15, 24, 151);
+}
+/* Busca al elemnto article y dentro de ese elemnto debe estar el p */
+article p{
+    color:red;
+    /* text-align: alinea el texto */
+    text-align:left;
+    /* font-size: tamaño del texto */
+    font-size: 18px
+}
+
+/* modificando li */
+
+li{
+    color:green;
+}
+
+/* color de fondo gris del ul */
+/* Lista horizontal */
+/* Para centrar el menu o ponerlo a la derecha, la recomendación es aplicar al nav */
+ul{
+    background-color: #ddd;
+    text-align:right;
+    border: 3px solid red;
+}
+
+ul li{
+    /* Quita las vieñtas de la lista */
+    list-style:none;
+    /* display: propiedad que se puede mostrar un elemento 
+    por default es display:block*/
+    display:inline;
+}
+
+a{
+    color:black;
+    /* text-decoration: propiedad para poder asignar distintos  estilos a un texto */
+    /* none significa que desabilita la propiedad */
+    text-decoration: none;
+}
+
+/* Este div contiene a mi foto */
+div{
+    border: 5px solid #000;
+    text-align:center;
+}
+
+img{
+    width: 45%;
+    height: 500px;
+}
+
+/* ID */
+/* Para poder acceder a un id en html, usamos un # más en nombre que lo asignanamos */
+#titulo{
+    color: aqua;
+}
+
+/* Los ID deben ser unicos, solo deben afectar a un elemento */
+/* Para repetir identificadores se recomienda usar clases */
+/* Para poder acceder a una clase desde css usamos el punto */
+/* usando clases podemos reutilizar codigo cdd */
+.text_pagina{
+    color: chocolate;
+    text-align:justify;
+}
+
+/* Se recomienda usar clases enves de id, solo usemos id cuando sea necesario */
+/* Ejemplo podemos usar id para el logo central de la pagina o para el h1 de la web */
+
+#logo{
+    width: 300px;
+    height:200px;
+    border:3px solid yellow
+}
