@@ -1,0 +1,448 @@
+body{
+    font-size: 20px;
+}
+
+h1{
+    font-family: 'Roboto', 'Times New Roman', Times, serif;
+    font-size: 60px;
+}
+
+h2{
+    font-family: 'Roboto', 'Times New Roman', Times, serif;
+    font-size: 60px;
+    align-items: center; 
+}
+/* Header */
+
+.header{
+    background-color: #00AAB5;
+    color:white;
+    display:flex;
+    justify-content: space-between;
+    height: 138px;
+    flex-direction:row;
+}
+
+.header div{
+    display:flex;
+    align-items: center; 
+    margin:10px;
+    margin-left:20px;
+}
+
+.header p{
+    padding-left: 10px;
+}
+
+.header ul{
+    display:flex;
+    margin:10px; 
+    margin-right:20px;
+}
+
+.header li{
+    padding-left: 15px;
+}
+
+.header h1{
+    line-height: 75px;
+}
+
+/* Section Quien Soy */
+
+.principal img{
+    position: absolute; 
+    width:100%;
+    height:800px;
+    align-items: center;
+}
+
+.principal{
+     position:relative; 
+    color:white;
+    width: 100%;
+    height: 800px;
+    align-items: center;
+}
+
+.principal h2{
+    position: absolute; 
+    margin-left:41%;
+    margin-top:1%;
+}
+
+.p{
+    position: absolute; 
+    margin-top: 20%;
+    margin-left: 5%; 
+    font-size: 34px;
+    color: white;
+    background-color:rgba(114, 153, 254, 0.5);
+}
+
+/* Mi skill */
+.my_skill{
+    background-color: #7299FE;
+}
+
+.my_skill h2{
+    padding-top:30px;
+    margin-left:41%;
+    color:#B508A3;
+}
+
+.my_skill h3{
+    color:#FFFFFF;
+    padding-bottom:10px;
+}
+
+.Contenedor{
+    
+    display:flex;
+    flex-wrap:wrap;
+    margin-top:50px;
+    margin-left:20%;
+    margin-right:20%;
+    padding-bottom:50px;
+}
+
+        /* Contenedor 1 */
+.html{
+    width:40%;
+    padding-bottom:20px;
+}
+
+.html-barra {
+    width:100%;
+    background-color:black;
+    height:20px;
+}
+
+.html-barra div{
+    background-color:white;
+    width:20%;
+    margin-left:80%;
+    height:20px;
+}
+
+.java{
+    width:40%;
+    padding-bottom:20px;
+    margin-left:20%;
+}
+
+.java-barra {
+    width:100%;
+    background-color:black;
+    height:20px;
+}
+
+.java-barra div{
+    background-color:white;
+    width:30%;
+    margin-left:70%;
+    height:20px;
+}
+
+
+.css{
+    width:40%;
+    padding-bottom:20px;
+}
+
+.css-barra {
+    width:100%;
+    background-color:black;
+    height:20px;
+}
+
+.css-barra div{
+    background-color:white;
+    width:35%;
+    margin-left:65%;
+    height:20px;
+}
+
+.react{
+    width:40%;
+    padding-bottom:20px;
+    margin-left:20%;
+}
+
+.react-barra {
+    width:100%;
+    background-color:black;
+    height:20px;
+}
+
+.react-barra div{
+    background-color:white;
+    width:45%;
+    margin-left:55%;
+    height:20px;
+}
+
+.angular{
+    width:40%;
+    padding-bottom:20px;
+}
+
+.angular-barra {
+    width:100%;
+    background-color:black;
+    height:20px;
+}
+
+.angular-barra div{
+    background-color:white;
+    width:50%;
+    margin-left:50%;
+    height:20px;
+}
+
+.python{
+    width:40%;
+    padding-bottom:20px;
+    margin-left:20%;
+}
+
+.python-barra {
+    width:100%;
+    background-color:black;
+    height:20px;
+}
+
+.python-barra div{
+    background-color:white;
+    width:32%;
+    margin-left:68%;
+    height:20px;
+}
+
+.figma{
+    width:40%;
+    padding-bottom:20px;
+}
+
+.figma-barra {
+    width:100%;
+    background-color:black;
+    height:20px;
+}
+
+.figma-barra div{
+    background-color:white;
+    width:25%;
+    margin-left:75%;
+    height:20px;
+}
+
+.node{
+    width:40%;
+    padding-bottom:20px;
+    margin-left:20%;
+}
+
+.node-barra {
+    width:100%;
+    background-color:black;
+    height:20px;
+}
+
+.node-barra div{
+    background-color:white;
+    width:70%;
+    margin-left:30%;
+    height:20px;
+}
+
+/* Servicios */
+.servicios{
+    background-color:#FB7171;
+}
+
+.servicios h2{
+    color:#00CC9B;
+    padding-top:30px;
+    margin-left:41%;
+}
+
+.servicios h3{
+    color:#FFFFFF;
+    margin-right: 100px;
+}
+
+.servicios .contenedor-servicios{
+    display:flex;
+    flex-wrap:wrap;
+    margin-top:50px;
+    margin-left:20%;
+    margin-right:20%;
+    padding-bottom:50px;
+}
+
+/* Diseño web */
+.diseño_web{
+    width:20%;
+    padding-bottom:40px;
+}
+
+
+/* Desarrollo web */
+.desarrollo_web{
+    width:20%;
+    padding-bottom:40px;
+    margin-left:20%;
+}
+
+/* Desarrollo mobile */
+.desarrollo_mobile{
+    width:20%;
+    padding-bottom:40px;
+    margin-left:20%;
+}
+
+/* Desarrollo UI */
+.diseño_ui{
+    width:20%;
+    padding-bottom:20px;
+    /* margin-left:20%; */
+}
+
+/* Diseño UX */
+.diseño_ux{
+    width:20%;
+    padding-bottom:20px;
+    margin-left:20%;
+}
+
+/* MEtodologia Agil */
+.metodologia_agil{
+    width:20%;
+    padding-bottom:20px;
+    margin-left:20%;
+}
+
+.servicios img{
+    margin-bottom:10px;
+}
+
+
+/* Portafolio */
+.portafolio{
+    background-color: #FFD233;
+}
+
+.portafolio h2{
+    color:#8402A5;
+    padding-top:30px;
+    margin-left:41%;
+}
+
+.portafolio div{
+    display:flex;
+    flex-wrap:wrap;
+    margin-top:50px;
+    margin-left:20%;
+    margin-right:20%;
+    padding-bottom:50px;
+}
+
+.portafolio img{
+    padding-left:80px;
+    padding-bottom:80px;
+}
+
+/* Clientes */
+
+.clientes{
+    background-color: #3F4E62;
+}
+
+.clientes h2{
+    color:#FF00C7;
+    padding-top:30px;
+    margin-left:41%;
+    margin-bottom:40px;
+}
+
+.clientes div{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    margin-left:10%;
+    margin-right:10%;
+    padding-bottom:50px;
+}
+
+/* Contacto */
+.contacto{
+    background-color: #16A085;
+}
+
+.contacto h2{
+    color:#CEE000;
+    padding-top:30px;
+    margin-left:41%;
+    margin-bottom:40px;
+}
+
+.contacto .primero{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    margin-left:20%; 
+    margin-right:20%; 
+    margin-bottom: 30px;
+}
+
+.contacto .segundo{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    margin-left:20%; 
+    margin-right:20%; 
+    margin-bottom: 30px;
+
+}
+
+.contacto .descripcion{
+    margin-left:20%; 
+    margin-right:20%; 
+    margin-bottom: 30px;
+}
+
+input{
+    width: 45%;
+    height: 59px;   
+}
+
+textarea{
+    width: 100%; 
+}
+
+button{
+    width: 150px;
+    height: 45px;
+    font-size: 20px;
+    background-color: #233451;
+    color:white;
+}
+
+.boton{
+    width: 100%;
+    display:flex;
+    justify-content:center;
+    padding-bottom: 30px;
+}
+
+.footer{
+    background-color:#00AAB5;
+    display:flex;
+    justify-content:space-between;
+    padding:40px;
+}
+
+.footer p{
+    color:white;
+}

@@ -1,0 +1,161 @@
+body{
+    background-color: white;
+    font-family: times;
+    font-size: 18px;
+}
+
+h1{
+    font-size: 30px;
+    color:#87119A;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+h2{
+    font-size: 20px;
+}
+
+picture{
+    border: 3px black solid;
+}
+
+picture img{
+    width:100%;
+}
+
+/* Header */
+
+.header{
+    background-color: #9ECEFA;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:10px;
+    padding-left:30px;
+    padding-right:30px;
+}
+
+.header ul{
+    display:flex;
+    color:#87119A;
+}
+
+.header li{
+    padding:10px;
+    
+}
+
+.header a{
+    text-decoration: none;
+}
+
+/* section home */
+.home{
+    margin: 20px;
+}
+.home h2{
+    border-left: 8px #87119A solid;
+    color: #87119A;
+    margin-bottom:5px;
+    padding-left:15px;
+}
+
+.home p{
+    margin-bottom:5px;
+}
+
+.home div{
+    display:flex;
+    justify-content: space-between;
+}
+
+/* servicios */
+.servicios{
+    margin: 20px;
+}
+.servicios h2{
+    border-left: 8px #87119A solid;
+    color: #87119A;
+    margin-bottom:5px;
+    padding-left:15px;
+}
+
+.servicios p{
+    margin-bottom:5px;
+}
+
+.servicios div{
+    display:flex;
+    justify-content: space-between;
+    
+}
+
+/* portafolio */
+.portafolio{
+    margin: 20px;
+}
+.portafolio h2{
+    border-left: 8px #87119A solid;
+    color: #87119A;
+    margin-bottom:5px;
+    padding-left:15px;
+}
+
+.portafolio p{
+    margin-bottom:5px;
+}
+
+.portafolio div{
+    margin-bottom:15px;
+}
+
+.portafolio .primer-grupo{
+     display:flex; 
+     justify-content:center;  
+    
+}
+
+.portafolio .segundo-grupo{
+    display:flex; 
+    justify-content:center;  
+   
+}
+
+/* .portafolio picture{ 
+    margin-right:30px;
+}*/
+
+/* Contacto */
+.contacto{
+    margin: 20px;
+}
+.contacto h2{
+    border-left: 8px #87119A solid;
+    color: #87119A;
+    margin-bottom:5px;
+    padding-left:15px;
+}
+
+.contacto p{
+    margin-bottom:5px;
+}
+
+.contacto .contenido{
+    display:flex;
+    
+}
+
+.contenido .datos{
+    margin-left:15px;
+}
+
+/* footer */
+.footer{
+    background-color: #73aee5;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:10px;
+    padding-left:30px;
+    padding-right:30px;
+    color:white;
+}
