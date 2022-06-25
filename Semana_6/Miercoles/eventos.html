@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,body{
+            height:300vh;
+        }
+    </style>
+</head>
+<body>
+    <input type="text">
+    <select required class="">
+        <option value="">Selecciona la operacion</option>
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <input type="checkbox">
+    <script>
+        window.onresize = function(){
+            console.log("Ancho",this.innerWidth);
+            console.log("Alto",this.innerHeight);
+        };
+        window.onscroll = function(){
+            console.log("Distancia", this.scrollY);
+        };
+        document.querySelector("body").onmousemove = function(event){
+          //  console.log("onmousemove X",event.clientX);
+           // console.log("onmousemove Y",event.clientY);
+            this.style.backgroundColor="rgb("+event.clientX/5+","+event.clientY/3+","+(event.clientX+event.clientY)/6+")";
+        };
+        window.onload = function(){
+            alert("Ya cargo toda la pagina");
+        };
+        const input = document.querySelector("input[type='text']");
+        input.oninput = function(e){
+            console.log("oninput",this.value);
+        };
+        input.onkeyup = function(e){
+            console.log("onkeyup",this.value);
+        };
+        input.onkepress = function(e){
+            console.log("onkepress",this.value);
+        };
+        input.onfocus = function(e){
+            console.log("onfocus",this.value);
+        };
+        const select = document.querySelector("select");
+        select.onchange = function(){
+            console.log("onchange",this.value);
+        };
+        const inputcheck = document.querySelector("input[type='checkbox']");
+        inputcheck.onchange = function(){
+            console.log("onchange",this.value);
+            console.log("onchange",this.checked);
+        }
+    </script>
+</body>
+</html>

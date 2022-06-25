@@ -1,0 +1,13 @@
+.wrapper{
+    display:flex;
+    flex-direction:column;
+    height:100vh;
+}
+
+.sy-main{
+    flex-grow:1;
+}
+
+.object-fit{
+    object-fit: cover;
+}

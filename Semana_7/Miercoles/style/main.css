@@ -1,0 +1,90 @@
+body{
+    font-family:times;
+}
+
+button{
+    border:0;
+    background-color:purple;
+    color:white;
+    padding: 10px;
+    font-style:bold;
+}
+/* Header */
+header{
+    background-color:purple;
+    font-size:20px;
+    padding: 20px;
+    color:white;
+    font-style:bold;
+    display:flex;
+    justify-content:space-between;
+}
+
+nav ul{
+    display:flex;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+nav ul li a{
+    text-decoration:none;
+    color:white;
+}
+
+nav ul li a:hover{
+    color:white;
+    text-decoration:underline;
+}
+
+/* Main */
+main{
+    margin-top:20px;
+    margin-left:20%;
+    margin-right:20%;
+}
+
+main .title{
+    color:rgba(0, 207, 149, 1);
+    margin-bottom:20px;
+    font-size:30px;
+    font-style:bold;
+}
+
+main .btn-registrar{
+    font-size:17px;
+}
+
+.cards{
+    min-height:249.5px;
+}
+/* Footer */
+footer{
+    padding: 20px;
+    font-size:20px;
+    background-color:purple;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    font-style:bold;
+}
+
+/*Clases para las tarjetas*/
+.js_delete,.js_edit{
+    padding: 5px;
+}
+
+/* Modal*/
+
+.modal-header h5{
+    color:rgba(0, 207, 149, 1);
+    font-size:20px;
+}
+
+.btn-editar{
+    border:0;
+    background-color:purple;
+    color:white;
+    padding: 5px;
+    font-style:bold;
+}

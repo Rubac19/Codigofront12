@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Hamburguesa</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <style>
+        *{
+            padding:0px;
+            margin:0px;
+        }
+        body{
+            font-family:arial;
+            font-size: 14px;
+        }
+        a{
+            text-decoration:none;
+            color:inherit;
+        }
+        ul{
+            list-style:none;
+        }
+        header{
+            background:green;
+            display:flex;
+            justify-content:space-between;
+            padding: 20px;
+            align-items:center;
+            position: relative;
+        }
+        .header_logo{
+            font-size:30px;
+            font-weight: bold;
+            color:beige;
+        }
+        .nav ul{
+            display:flex;
+        }
+        .nav li{
+            margin-left: 20px;
+            color:white;
+        }
+        .nav a:hover{
+            text-decoration:underline;
+        }
+        i{
+            font-size:30px;
+            background:green;
+            color:white;
+        }
+        button{
+            border:none;
+            display:none;
+        }
+        @media(max-width:550px){
+            .nav{
+                /* Antes */
+                /* display:none; */
+                position:absolute;
+                top:100%;
+                left:0;
+                width:100%;
+                background: #1b5f1b;
+                /* Otra forma */
+                transition: all .8s ease;
+                transform: translateY(-500px);
+                opacity:0;
+            }
+            .nav ul{
+                flex-direction:column;
+            }
+            .nav li{
+                margin:0px;
+            }
+            .nav a{
+                display:block;
+                padding:20px;
+                border-bottom: 1px solid cdcdcd;
+            }
+            button{
+                display:block;
+            }
+            .nav.is-active{
+                /* antes */
+                /* display:block; */
+                /* Otra forma */
+                transform: translateY(0px);
+                opacity:1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="" class="header_logo">Logo</a>
+        <nav class="nav js_nav">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Quienes Somos</a></li>
+                <li><a href="">Portafolio</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
+        </nav>
+        <button><i class="fas fa-align-right"></i></button>
+    </header>
+
+    <script>
+        function toggleMenu(){
+            const button = document.querySelector("button");
+            const menu = document.querySelector(".js_nav");
+            button.onclick = function(){
+                menu.classList.toggle("is-active");//add y remove juntos
+            };
+        }
+        toggleMenu();
+    </script>
+</body>
+</html>

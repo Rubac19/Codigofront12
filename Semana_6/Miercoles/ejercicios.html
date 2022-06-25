@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="js_button_1" data-color="red" data-color-bg="orange" data-text="boton uno modificado">BOTON UNO</button>
+    <button class="js_button_2" data-color="blue" data-color-bg="orange" data-text="boton dos modificado">BOTON DOS</button>
+    <button class="js_button_3" data-color="white" data-color-bg="orange" data-text="boton tres modificado">BOTON TRES</button>
+    <button class="js_button_4" data-color="purple" data-color-bg="orange" data-text="boton cuatro modificado">BOTON CUATRO</button>
+    <script>
+        const button=document.querySelectorAll("button");
+        function style(){
+            this.style.color=this.dataset.color;
+            this.style.backgroundColor=this.dataset.colorBg;
+            this.textContent = this.dataset.text;
+        }
+        function recorrerBotones(){
+            let i =0;
+            for(i=0;i<button.length;i++){
+                button[i].onclick = style;
+            }
+        }
+        recorrerBotones();
+    </script>
+</body>
+</html>
